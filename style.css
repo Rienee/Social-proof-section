@@ -1,0 +1,261 @@
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;         
+    min-height: 100vh;
+    display: flex;
+    padding: 80px 150px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-family: 'League Spartan';
+    overflow: visible;
+    margin: 0;
+    padding: 85px;
+    color: hsl(303, 10%, 53%);
+    background: url(images/bg-pattern-top-desktop.svg) top left, 
+    url(images/bg-pattern-bottom-desktop.svg) bottom right;
+    background-color: hsl(300, 24%, 96%);
+
+}
+.container {
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    gap: 30px;
+    padding: 15px;
+    
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+.products .heading {
+    font-size: 45px;
+    margin-bottom: 1rem;
+}
+.products h2{
+    color: hsl(300, 43%, 22%);
+    font-size: 40px;
+}
+.container .products {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .ontop {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 10px;
+}
+.container .products .ontop {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.ontop h2 {
+    font-size: 3rem;
+}
+.ontop p {
+    font-size: 18px;
+    line-height: 20px;
+    color: hsl(303, 10%, 53%);
+    font-weight: 500;
+}
+.rating {
+    background: hsl(300, 24%, 96%);
+    margin: 4rem 1rem;
+}
+.container .products .rating {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+} 
+.rating-box {
+   display: inline-flex;
+   width: 100%;
+   border-radius: .3rem;
+   padding: .8rem;
+   gap: .5rem;
+   background: hsl(302, 10%, 53%, 0.2);
+}
+.rating .rating-box {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    padding: 12px 20px;
+    border-radius: 6px;
+} 
+.rating-box .stars {
+    width: fit-content;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.rating h3{
+    color: hsl(300, 43%, 22%);
+    margin: 0 auto;
+}
+.rating-box h3 {
+    font-size: 15px;
+    font-weight: 800;
+}
+ .reviews{
+          margin-left: 30px;
+}
+.report {
+    margin-left: 90px;
+}
+.tech {
+    margin-left: 150px;
+}
+.users {
+    font-size: 20px;
+}
+
+.container .comments {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.comments .customer{
+    background: hsl(300, 43%, 22%);
+    color: #fff;
+    padding: 30px 25px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.comments .customer .info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.info img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+}
+
+.info p {
+    font-size: 15px;
+}
+.info p span {
+    color: hsl(333, 80%, 67%);
+    line-height: 20px;
+}
+.customer p {
+    line-height: 20px;
+}
+.customer .info {
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 1024px) {
+    body {
+        padding: 40px 100px;
+        overflow: scroll;
+    }
+    .container {
+        gap: 0px;
+    }
+    .container .rating .rating-box {
+        width: 380px;
+    }
+    .container .products {
+        align-items: center;
+    }
+    .ptoducts {
+        text-align: center;
+        justify-content: center;
+    }
+}
+@media (max-width: 730px) {
+    body {
+        background: #fff;
+        overflow: visible;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 30px ;
+    }
+    .container {
+        width: 100%;
+        gap: 20px;
+    }
+    .container .products {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    .container .products .ontop {
+        width: 100%;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .container .products .rating {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .rating .rating-box {
+        flex-direction: column;
+        align-items: center;
+    }
+    .rating .reviews,
+    .rating .report,
+    .rating .tech {
+       margin: 0;
+    }
+    .irene,
+    .anne  {
+        margin-top: 0;
+    }
+    .rating .rating-box {
+        flex-direction: column;
+        grid-area: 10px;
+    }
+    .comments p {
+        justify-content: flex-start;
+    }
+    .container .comments {
+        flex-direction: column;
+    }
+}
+@media (max-width: 400px) {
+    .container{
+        width: 350px;
+        padding: 0px 30px;
+    }
+    .container .products {
+        width: 100%;
+    }
+    .rating {
+        width: 100%;
+    }
+    .rating .rating-box {
+        gap: 10px;
+    }
+    
+}
